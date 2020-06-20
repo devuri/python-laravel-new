@@ -1,0 +1,25 @@
+#!/usr/bin/env python
+
+import os
+print('Okay, Creating New Laravel Project')
+
+# run composer to create the project
+os.system('composer create-project --prefer-dist laravel/laravel')
+os.system('mv  laravel/*.* .')
+os.system('mv  laravel/* .')
+os.system('mv  laravel/.* .')
+os.system('ls -l')
+os.system('rm -r laravel')
+
+# setup git
+print('Lets add to git')
+os.system('git init')
+os.system('git add .')
+os.system('git commit -m "Initial commit" ')
+
+# laravel is ready
+os.system('php artisan')
+print(' >>> Awesome Laravel is Ready')
+print(' >>> Change the Database Credentials in .env')
+print(' >>> Run php artisan migrate to setup authentication')
+os.system('rm laravel-install')
