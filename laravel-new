@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 import os
-print('Okay, Creating New Laravel Project')
+print('Creating New Laravel Project')
 
 # run composer to create the project
 os.system('composer create-project --prefer-dist laravel/laravel')
@@ -19,7 +19,10 @@ os.system('git commit -m "Initial commit" ')
 
 # laravel is ready
 os.system('php artisan')
-print(' >>> Awesome Laravel is Ready')
-print(' >>> Change the Database Credentials in .env')
-print(' >>> Run php artisan migrate to setup authentication')
+print('+-----------------------------------------------------+')
+print('| >>> Awesome Laravel is Ready                        |')
+print('+-----------------------------------------------------+')
+print('| >>> Change the Database Credentials in .env         |')
+print('| >>> Run php artisan migrate to setup authentication |')
+print('+-----------------------------------------------------+')
 os.system('rm laravel-new')
