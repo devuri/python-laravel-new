@@ -5,7 +5,7 @@ Uses Composer create-project
 * run the "python laravel-new" command within the directory where you have the laravel-new file.
 
 
-```
+```shell
 python laravel-new
 
 ```
